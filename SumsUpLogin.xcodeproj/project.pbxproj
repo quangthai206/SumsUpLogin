@@ -11,6 +11,8 @@
 		FD4AB4F627FEEABF0053B088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB4F527FEEABF0053B088 /* ContentView.swift */; };
 		FD4AB4F827FEEAC40053B088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4AB4F727FEEAC40053B088 /* Assets.xcassets */; };
 		FD4AB4FB27FEEAC40053B088 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4AB4FA27FEEAC40053B088 /* Preview Assets.xcassets */; };
+		FD4AB50427FEEC420053B088 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB50327FEEC420053B088 /* View+Extensions.swift */; };
+		FD4AB50727FEED050053B088 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB50627FEED050053B088 /* SocialLoginButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		FD4AB4F527FEEABF0053B088 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD4AB4F727FEEAC40053B088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD4AB4FA27FEEAC40053B088 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD4AB50127FEEBD10053B088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FD4AB50327FEEC420053B088 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		FD4AB50627FEED050053B088 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,9 @@
 		FD4AB4F227FEEABF0053B088 /* SumsUpLogin */ = {
 			isa = PBXGroup;
 			children = (
+				FD4AB50527FEECF00053B088 /* Views */,
+				FD4AB50227FEEC210053B088 /* Extensions */,
+				FD4AB50127FEEBD10053B088 /* Info.plist */,
 				FD4AB4F327FEEABF0053B088 /* SumsUpLoginApp.swift */,
 				FD4AB4F527FEEABF0053B088 /* ContentView.swift */,
 				FD4AB4F727FEEAC40053B088 /* Assets.xcassets */,
@@ -65,6 +73,22 @@
 				FD4AB4FA27FEEAC40053B088 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD4AB50227FEEC210053B088 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AB50327FEEC420053B088 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FD4AB50527FEECF00053B088 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AB50627FEED050053B088 /* SocialLoginButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4AB4F627FEEABF0053B088 /* ContentView.swift in Sources */,
+				FD4AB50427FEEC420053B088 /* View+Extensions.swift in Sources */,
+				FD4AB50727FEED050053B088 /* SocialLoginButton.swift in Sources */,
 				FD4AB4F427FEEABF0053B088 /* SumsUpLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +298,7 @@
 				DEVELOPMENT_TEAM = H79RPXCYWU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SumsUpLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +329,7 @@
 				DEVELOPMENT_TEAM = H79RPXCYWU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SumsUpLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
