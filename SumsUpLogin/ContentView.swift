@@ -11,7 +11,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color("BgColor").edgesIgnoringSafeArea(.all)
-            VStack(spacing: 13) {
+            VStack(spacing: 0) {
+                
+                Spacer()
                 
                 Image(uiImage: UIImage(named: "onboard")!)
                     .resizable()
@@ -37,6 +39,7 @@ struct ContentView: View {
                         .foregroundColor(.white),
                     backgroundColor: .black
                 )
+                    .padding(.vertical, 12)
                 
                 SocalLoginButton(
                     image: Image(uiImage: UIImage(named: "facebook")!),
@@ -45,8 +48,15 @@ struct ContentView: View {
                     backgroundColor: .blue
                 )
                 
+                Spacer()
+                
+                Text("You are completely safe.")
+                    .foregroundColor(.black)
+                Text("Read our Terms & Conditions.")
+                    .foregroundColor(Color("PrimaryColor"))
+                
             }
-            .padding(.horizontal)
+            .padding()
         }
         
     }
