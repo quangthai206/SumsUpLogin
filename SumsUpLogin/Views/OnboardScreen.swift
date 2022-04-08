@@ -12,12 +12,16 @@ struct OnboardScreen: View {
     @State var username = "xxx"
     @State private var previewIndex = 0
     var previewOptions = ["Always", "When Unlocked", "Never"]
+    var descriptions = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor", "Save money for the future", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"]
+    
+    @State private var selectedCurrencyIndex = 0
+    
+    @State var showModal = false
     
     var body: some View {
-        NavigationView {
         ZStack {
-            Color.red.edgesIgnoringSafeArea(.all)
-            VStack {
+            Color("BgColor").edgesIgnoringSafeArea(.all)
+            VStack(spacing: 0) {
                 TabView(selection: $currentIndex) {
                     ForEach(1...3, id: \.self) { index in
                         GeometryReader { proxy -> AnyView in
@@ -36,11 +40,12 @@ struct OnboardScreen: View {
 //                                        .frame(maxHeight: .infinity, alignment: .center)
                                     
                                     Text("Pet Adoption")
-                                        .font(.largeTitle)
+                                        .font(.title2)
                                         .fontWeight(.heavy)
                                     
-                                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")
-                                        .font(.system(size: 17, weight: .bold))
+                                    Text(descriptions[index - 1])
+                                        .font(.system(size: 17, weight: .semibold))
+                                        .multilineTextAlignment(.center)
                                         .padding()
                                 }
                                     .foregroundColor(.black)
@@ -52,25 +57,53 @@ struct OnboardScreen: View {
                     }
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
+                .frame(width: UIScreen.main.bounds.width, height: 400.0)
                 
                 CustomTabIndicator(count: 3, current: $currentIndex)
                 
+                Spacer()
+                        .frame(height: 60)
                 
-                    Form {
-    //                    Section() {
-                            TextField("Username", text: $username)
-                            Picker(selection: $previewIndex, label: Text("Show Previews")) {
-                                ForEach(0 ..< previewOptions.count) {
-                                    Text(self.previewOptions[$0])
-                                }
-                            }
-    //                    }
-                        
+                Button {
+                    self.showModal.toggle()
+                } label: {
+                    HStack {
+                        Text("Select your currency ")
+                        Spacer()
+                        Text(currencies[selectedCurrencyIndex])
+                        Image(systemName: "chevron.right")
+                            .font(.body)
                     }
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.black)
+                    .cornerRadius(10)
+                    .frame(width: UIScreen.main.bounds.width * 0.85, height: 80)
+                }
+                
+                Button {
+//                    self.showModal.toggle()
+                } label: {
+                    HStack {
+                        Text("Budget per month ")
+                        Spacer()
+                        Text("0")
+                        Image(systemName: "chevron.right")
+                            .font(.body)
+                    }
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.black)
+                    .cornerRadius(10)
+                    .frame(width: UIScreen.main.bounds.width * 0.85, height: 80)
+                }
+                
                 
             }
+            
+            SelectCurrencyView(showModal: $showModal, selectedCurrencyIndex: $selectedCurrencyIndex)
         }
-        }
+        
         
     }
 }

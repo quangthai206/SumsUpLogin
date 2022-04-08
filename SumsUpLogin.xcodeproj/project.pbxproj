@@ -15,6 +15,7 @@
 		FD4AB4FB27FEEAC40053B088 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4AB4FA27FEEAC40053B088 /* Preview Assets.xcassets */; };
 		FD4AB50427FEEC420053B088 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB50327FEEC420053B088 /* View+Extensions.swift */; };
 		FD4AB50727FEED050053B088 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB50627FEED050053B088 /* SocialLoginButton.swift */; };
+		FDAF808527FFE60F00899549 /* SelectCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF808427FFE60F00899549 /* SelectCurrencyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FD4AB50127FEEBD10053B088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FD4AB50327FEEC420053B088 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		FD4AB50627FEED050053B088 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
+		FDAF808427FFE60F00899549 /* SelectCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				FD4AB50627FEED050053B088 /* SocialLoginButton.swift */,
 				2751514827FF1F0700E50488 /* LoginScreen.swift */,
 				2751514A27FF291800E50488 /* OnboardScreen.swift */,
+				FDAF808427FFE60F00899549 /* SelectCurrencyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				2751514B27FF291800E50488 /* OnboardScreen.swift in Sources */,
 				FD4AB50427FEEC420053B088 /* View+Extensions.swift in Sources */,
 				FD4AB50727FEED050053B088 /* SocialLoginButton.swift in Sources */,
+				FDAF808527FFE60F00899549 /* SelectCurrencyView.swift in Sources */,
 				FD4AB4F427FEEABF0053B088 /* SumsUpLoginApp.swift in Sources */,
 				2751514927FF1F0800E50488 /* LoginScreen.swift in Sources */,
 			);
