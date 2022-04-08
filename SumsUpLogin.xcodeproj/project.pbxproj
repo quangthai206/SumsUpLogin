@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2751514927FF1F0800E50488 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751514827FF1F0700E50488 /* LoginScreen.swift */; };
+		2751514B27FF291800E50488 /* OnboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751514A27FF291800E50488 /* OnboardScreen.swift */; };
 		FD4AB4F427FEEABF0053B088 /* SumsUpLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB4F327FEEABF0053B088 /* SumsUpLoginApp.swift */; };
 		FD4AB4F627FEEABF0053B088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB4F527FEEABF0053B088 /* ContentView.swift */; };
 		FD4AB4F827FEEAC40053B088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4AB4F727FEEAC40053B088 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2751514827FF1F0700E50488 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		2751514A27FF291800E50488 /* OnboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardScreen.swift; sourceTree = "<group>"; };
 		FD4AB4F027FEEABF0053B088 /* SumsUpLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SumsUpLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4AB4F327FEEABF0053B088 /* SumsUpLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumsUpLoginApp.swift; sourceTree = "<group>"; };
 		FD4AB4F527FEEABF0053B088 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				FD4AB50627FEED050053B088 /* SocialLoginButton.swift */,
+				2751514827FF1F0700E50488 /* LoginScreen.swift */,
+				2751514A27FF291800E50488 /* OnboardScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,9 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4AB4F627FEEABF0053B088 /* ContentView.swift in Sources */,
+				2751514B27FF291800E50488 /* OnboardScreen.swift in Sources */,
 				FD4AB50427FEEC420053B088 /* View+Extensions.swift in Sources */,
 				FD4AB50727FEED050053B088 /* SocialLoginButton.swift in Sources */,
 				FD4AB4F427FEEABF0053B088 /* SumsUpLoginApp.swift in Sources */,
+				2751514927FF1F0800E50488 /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
