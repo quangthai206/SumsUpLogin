@@ -103,6 +103,7 @@ struct OnboardScreen: View {
             
             SelectCurrencyView(showModal: $showModal, selectedCurrencyIndex: $selectedCurrencyIndex)
         }
+        .navigationBarHidden(true)
         
         
     }
