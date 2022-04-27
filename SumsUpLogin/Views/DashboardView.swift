@@ -15,9 +15,9 @@ struct TestData: Identifiable {
 
 struct DashboardView: View {
     let mygroups = [
-            TestData(title: "Numbers", items: ["1"]),
-            TestData(title: "Letters", items: ["A","B", "C"]),
-            TestData(title: "Symbols", items: ["€","%"])
+            TestData(title: "04/04/2022", items: ["1"]),
+            TestData(title: "03/04/2022", items: ["A","B", "C"]),
+            TestData(title: "01/04/2022", items: ["€","%"])
         ]
     
     var body: some View {
@@ -49,6 +49,7 @@ struct DashboardView: View {
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(Color.black, lineWidth: 3)
             )
+            .padding(.bottom, 30)
       
             
             ScrollView(showsIndicators: false) {
@@ -62,8 +63,13 @@ struct DashboardView: View {
                     }
                 }
             }
+            .padding(.bottom, 15)
 
-            
+            HStack {
+                Spacer()
+                Image(systemName: "plus.circle")
+                    .font(.system(size: 55))
+            }
           
         }
         .padding()
@@ -74,7 +80,7 @@ struct CustomCell: View {
     var body: some View {
         HStack {
             Image(systemName: "dollarsign.circle")
-                .font(.system(size: 50))
+                .font(.system(size: 45))
             
             VStack(alignment: .leading) {
                 Text("Amount: -$200")
