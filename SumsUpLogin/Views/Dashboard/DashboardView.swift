@@ -17,17 +17,15 @@ struct DashboardView: View {
             
             HStack {
                 Spacer()
-                Image(systemName: "plus.circle.fill")
-                    .renderingMode(.original)
-                    .foregroundColor(Color.orange)
-                    .font(.system(size: 60))
+                ImageOnCircle(icon: "plus", radius: 30, gradient: Gradient(colors: [Color(hex: "#fe9262"), Color(hex: "#ce68f4"), Color(hex: "#ce68f4")]))
+                    .padding(.trailing)
             }
         }
         .padding(.top, 50)
         .padding(.bottom, 20)
         .padding()
         .foregroundColor(Color.black)
-        .background(Color.white)
+        .background(Color("DashboardBg"))
         .ignoresSafeArea(.all)
     }
 }

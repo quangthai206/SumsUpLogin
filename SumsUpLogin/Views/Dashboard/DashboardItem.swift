@@ -7,23 +7,34 @@
 
 import SwiftUI
 
+let testGradients = [
+    Gradient(colors: [Color(hex: "#667eea"), Color(hex: "#49a09d")]),
+    Gradient(colors: [Color(hex: "#7F00FF"), Color(hex: "#E100FF")]),
+    Gradient(colors: [Color(hex: "#22c1c3"), Color(hex: "#fdbb2d")]),
+    Gradient(colors: [Color(hex: "#fc4a1a"), Color(hex: "#f7b733")])
+]
+
 struct DashboardItem: View {
     var body: some View {
-        HStack {
-            Image(systemName: "dollarsign.circle")
-                .font(.system(size: 45))
+        HStack(spacing: 0) {
+            ImageOnCircle(icon: "airplane", radius: 30, gradient: testGradients.randomElement()!)
+                .padding(.trailing)
             
             VStack(alignment: .leading) {
                 Text("Amount: -$200")
+                    .font(.headline)
                 Text("Category: Shopping")
+                    .font(.caption)
             }
             
             Spacer()
             
-            Image(systemName: "greaterthan")
+            Image(systemName: "arrow.right")
         }
         .padding()
-        .border(Color.black, width: 2)
+        .background(Color.white)
+        .cornerRadius(12)
+        
     }
 }
 

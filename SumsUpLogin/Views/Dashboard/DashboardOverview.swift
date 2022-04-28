@@ -13,30 +13,31 @@ struct DashboardOverview: View {
             HStack {
                 VStack(alignment: .leading, spacing: 0) {
                     Text("Month spent: $500")
-                        .padding(.bottom, 8)
+                        .font(.headline)
                     Text("Month budget: $1800")
+                        .font(.headline)
                 }
                 
                 Spacer()
                 
                 Image(systemName: "chart.pie")
-                    .font(.system(size: 38))
+                    .font(.system(size: 40))
             }
             
             Spacer()
             
-            Text("Totol spent: $500")
+            Text("Total spent: $500")
+                .fontWeight(.semibold)
                 .padding(.bottom, 6)
-            ProgressView(value: 600, total: 1000)
-                .accentColor(.gray)
-                .scaleEffect(x: 1, y: 1.5, anchor: .center)
+            
+            ProgressBar()
         }
         .padding()
-        .frame(height: 140)
-        .overlay(
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(Color.black, lineWidth: 3)
-        )
+        .frame(height: 160)
+        
+        .background(LinearGradient(gradient: Gradient(colors: [Color(hex: "#536976"), Color(hex: "#292E49")]), startPoint: .topLeading, endPoint: .bottomTrailing))
+        .foregroundColor(.white)
+        .cornerRadius(15)
     }
 }
 
