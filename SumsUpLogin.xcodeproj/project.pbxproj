@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2751514927FF1F0800E50488 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751514827FF1F0700E50488 /* LoginScreen.swift */; };
 		2751514B27FF291800E50488 /* OnboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2751514A27FF291800E50488 /* OnboardScreen.swift */; };
+		8410E089281A4331007D979D /* DashboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410E088281A4331007D979D /* DashboardItem.swift */; };
+		8410E08B281A4367007D979D /* DashboardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410E08A281A4367007D979D /* DashboardList.swift */; };
+		8410E08D281A4476007D979D /* DashboardOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410E08C281A4476007D979D /* DashboardOverview.swift */; };
 		845161FC2819251100BE4E1C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845161FB2819251100BE4E1C /* DashboardView.swift */; };
 		FD4AB4F427FEEABF0053B088 /* SumsUpLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB4F327FEEABF0053B088 /* SumsUpLoginApp.swift */; };
 		FD4AB4F627FEEABF0053B088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB4F527FEEABF0053B088 /* ContentView.swift */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		2751514827FF1F0700E50488 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		2751514A27FF291800E50488 /* OnboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardScreen.swift; sourceTree = "<group>"; };
+		8410E088281A4331007D979D /* DashboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardItem.swift; sourceTree = "<group>"; };
+		8410E08A281A4367007D979D /* DashboardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardList.swift; sourceTree = "<group>"; };
+		8410E08C281A4476007D979D /* DashboardOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardOverview.swift; sourceTree = "<group>"; };
 		845161FB2819251100BE4E1C /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		FD4AB4F027FEEABF0053B088 /* SumsUpLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SumsUpLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4AB4F327FEEABF0053B088 /* SumsUpLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumsUpLoginApp.swift; sourceTree = "<group>"; };
@@ -45,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8410E087281A42F1007D979D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				845161FB2819251100BE4E1C /* DashboardView.swift */,
+				8410E088281A4331007D979D /* DashboardItem.swift */,
+				8410E08A281A4367007D979D /* DashboardList.swift */,
+				8410E08C281A4476007D979D /* DashboardOverview.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		FD4AB4E727FEEABF0053B088 = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +111,11 @@
 		FD4AB50527FEECF00053B088 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8410E087281A42F1007D979D /* Dashboard */,
 				FD4AB50627FEED050053B088 /* SocialLoginButton.swift */,
 				2751514827FF1F0700E50488 /* LoginScreen.swift */,
 				2751514A27FF291800E50488 /* OnboardScreen.swift */,
 				FDAF808427FFE60F00899549 /* SelectCurrencyView.swift */,
-				845161FB2819251100BE4E1C /* DashboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +192,9 @@
 			files = (
 				FD4AB4F627FEEABF0053B088 /* ContentView.swift in Sources */,
 				845161FC2819251100BE4E1C /* DashboardView.swift in Sources */,
+				8410E08B281A4367007D979D /* DashboardList.swift in Sources */,
+				8410E08D281A4476007D979D /* DashboardOverview.swift in Sources */,
+				8410E089281A4331007D979D /* DashboardItem.swift in Sources */,
 				2751514B27FF291800E50488 /* OnboardScreen.swift in Sources */,
 				FD4AB50427FEEC420053B088 /* View+Extensions.swift in Sources */,
 				FD4AB50727FEED050053B088 /* SocialLoginButton.swift in Sources */,
@@ -311,7 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SumsUpLogin/Preview Content\"";
-				DEVELOPMENT_TEAM = D5SYALTF5P;
+				DEVELOPMENT_TEAM = 657PC37B7M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SumsUpLogin/Info.plist;
@@ -342,7 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SumsUpLogin/Preview Content\"";
-				DEVELOPMENT_TEAM = D5SYALTF5P;
+				DEVELOPMENT_TEAM = 657PC37B7M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SumsUpLogin/Info.plist;
