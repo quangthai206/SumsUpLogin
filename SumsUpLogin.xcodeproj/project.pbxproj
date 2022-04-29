@@ -15,6 +15,8 @@
 		8410E08F281A7335007D979D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410E08E281A7335007D979D /* Color+Extensions.swift */; };
 		8410E091281A8686007D979D /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410E090281A8686007D979D /* ProgressBar.swift */; };
 		8410E094281A987B007D979D /* ImageOnCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410E093281A987B007D979D /* ImageOnCircle.swift */; };
+		8410E097281B745C007D979D /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410E096281B745C007D979D /* StatisticView.swift */; };
+		8410E099281BD3FE007D979D /* SegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410E098281BD3FE007D979D /* SegmentedPicker.swift */; };
 		845161FC2819251100BE4E1C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845161FB2819251100BE4E1C /* DashboardView.swift */; };
 		FD4AB4F427FEEABF0053B088 /* SumsUpLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB4F327FEEABF0053B088 /* SumsUpLoginApp.swift */; };
 		FD4AB4F627FEEABF0053B088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4AB4F527FEEABF0053B088 /* ContentView.swift */; };
@@ -34,6 +36,8 @@
 		8410E08E281A7335007D979D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		8410E090281A8686007D979D /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		8410E093281A987B007D979D /* ImageOnCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOnCircle.swift; sourceTree = "<group>"; };
+		8410E096281B745C007D979D /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		8410E098281BD3FE007D979D /* SegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPicker.swift; sourceTree = "<group>"; };
 		845161FB2819251100BE4E1C /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		FD4AB4F027FEEABF0053B088 /* SumsUpLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SumsUpLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4AB4F327FEEABF0053B088 /* SumsUpLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumsUpLoginApp.swift; sourceTree = "<group>"; };
@@ -74,8 +78,17 @@
 				8410E090281A8686007D979D /* ProgressBar.swift */,
 				FD4AB50627FEED050053B088 /* SocialLoginButton.swift */,
 				8410E093281A987B007D979D /* ImageOnCircle.swift */,
+				8410E098281BD3FE007D979D /* SegmentedPicker.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		8410E095281B744D007D979D /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				8410E096281B745C007D979D /* StatisticView.swift */,
+			);
+			path = Statistic;
 			sourceTree = "<group>";
 		};
 		FD4AB4E727FEEABF0053B088 = {
@@ -128,6 +141,7 @@
 		FD4AB50527FEECF00053B088 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8410E095281B744D007D979D /* Statistic */,
 				8410E092281A986B007D979D /* Common */,
 				8410E087281A42F1007D979D /* Dashboard */,
 				2751514827FF1F0700E50488 /* LoginScreen.swift */,
@@ -208,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4AB4F627FEEABF0053B088 /* ContentView.swift in Sources */,
+				8410E097281B745C007D979D /* StatisticView.swift in Sources */,
 				845161FC2819251100BE4E1C /* DashboardView.swift in Sources */,
 				8410E08B281A4367007D979D /* DashboardList.swift in Sources */,
 				8410E08D281A4476007D979D /* DashboardOverview.swift in Sources */,
@@ -216,6 +231,7 @@
 				FD4AB50427FEEC420053B088 /* View+Extensions.swift in Sources */,
 				FD4AB50727FEED050053B088 /* SocialLoginButton.swift in Sources */,
 				FDAF808527FFE60F00899549 /* SelectCurrencyView.swift in Sources */,
+				8410E099281BD3FE007D979D /* SegmentedPicker.swift in Sources */,
 				FD4AB4F427FEEABF0053B088 /* SumsUpLoginApp.swift in Sources */,
 				8410E094281A987B007D979D /* ImageOnCircle.swift in Sources */,
 				8410E091281A8686007D979D /* ProgressBar.swift in Sources */,
@@ -351,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SumsUpLogin/Preview Content\"";
-				DEVELOPMENT_TEAM = D5SYALTF5P;
+				DEVELOPMENT_TEAM = 657PC37B7M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SumsUpLogin/Info.plist;
@@ -366,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quangthai206.SumsUpLogin1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quangthai206.SumsUpLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -382,7 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SumsUpLogin/Preview Content\"";
-				DEVELOPMENT_TEAM = D5SYALTF5P;
+				DEVELOPMENT_TEAM = 657PC37B7M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SumsUpLogin/Info.plist;
@@ -397,7 +413,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quangthai206.SumsUpLogin1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quangthai206.SumsUpLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
